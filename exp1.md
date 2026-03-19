@@ -37,3 +37,18 @@ To create tables, insert values and perform basic SQL operations like DELETE, UP
 ```sql
 CREATE TABLE Employee_master AS
 SELECT * FROM Employee;
+```
+
+### 2. Delete all records from Employee_master whose DeptNo is 10
+
+```sql
+DELETE FROM Employee_master
+WHERE DeptNo = 10;
+```
+
+### 3. Update 10% increase in salary of DEPTNO 20
+
+```sql
+UPDATE Employee_master
+SET SAL = SAL + (SAL * 0.10)
+WHERE DeptNo = 20;
