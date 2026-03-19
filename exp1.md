@@ -52,3 +52,16 @@ WHERE DeptNo = 10;
 UPDATE Employee_master
 SET SAL = SAL + (SAL * 0.10)
 WHERE DeptNo = 20;
+```
+
+### 4. Alter SAL with size 10,2 in Employee_master
+
+```sql
+ALTER TABLE Employee_master
+MODIFY SAL NUMBER(10,2);
+```
+
+### 5. Drop Employee_master Table
+
+```sql
+DROP TABLE Employee_master;
