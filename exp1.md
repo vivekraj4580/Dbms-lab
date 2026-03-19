@@ -1,17 +1,39 @@
-# Experiment No: 1
-## Title: Creating Tables and Inserting Data
+# Experiment No: 1  
+## Title: Table Creation and Basic SQL Operations  
 
-## Aim
-To create database tables for a DBMS lab and insert sample data into them.
+## Aim  
+To create tables, insert values and perform basic SQL operations like DELETE, UPDATE, ALTER, and DROP.
 
-## Table Structure
+---
 
-## Queries / Tasks
+## Table Structure  
 
-### 1. Create table
+### EMPLOYEE Table  
+
+| Column Name | Data Type | Size | Attributes |
+|-------------|-----------|------|------------|
+| EMPNO | NUMBER | 4 | Primary Key |
+| ENAME | VARCHAR2 | 20 | Not Null |
+| JOB | VARCHAR2 | 20 |  |
+| MGR | NUMBER | 4 |  |
+| HIREDATE | DATE |  |  |
+| SAL | NUMBER | 10 |  |
+| COMM | NUMBER | 7 |  |
+| DEPTNO | NUMBER | 2 | Foreign Key |
+
+### DEPARTMENT Table  
+
+| Column Name | Data Type | Size | Attributes |
+|-------------|-----------|------|------------|
+| DEPTNO | NUMBER | 2 | Primary Key |
+| DNAME | VARCHAR2 | 15 | Not Null |
+
+---
+
+## Queries / Tasks  
+
+### 1. Create Employee_master table with data using Employee table  
 
 ```sql
--- CREATE TABLE statement here
-```
-
-
+CREATE TABLE Employee_master AS
+SELECT * FROM Employee;
